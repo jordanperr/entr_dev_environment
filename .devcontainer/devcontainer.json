@@ -1,0 +1,35 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/alpine
+{
+	"name": "VSCode ENTR Dev Container",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "jordanperr/entr_runtime:dev",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [8888],
+
+	"mounts": [
+		"source=${localWorkspaceFolder}/OpenOA,target=/home/jovyan/src/OpenOA,type=bind",
+		"source=${localWorkspaceFolder}/entr_warehouse,target=/home/jovyan/src/entr_warehouse,type=bind"
+	],
+
+	"postStartCommand": "nohup bash -c '/usr/local/bin/start-notebook.sh &' > jupyter-notebook-server.out",
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python"
+			]
+		}
+	}
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
