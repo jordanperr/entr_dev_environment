@@ -12,8 +12,8 @@
 3. Download the git submodules by running `git submodule update`
 4. Open the project in the dev container. VSCode may prompt you for this. If it does not, go `CMD-SHIFT-P` and then type `Reopen In Container`.
 5. Now, you can choose to:
-- Use **Jupyter Hub** by accessing `localhost:8888` from a browser.
-- Use **VSCode** by simply opening files from the explorer pane. You may want to install the [Jupyter Notebooks extensions](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) from the VSCode extensions marketplace.
+    - Use **Jupyter Hub** by accessing `localhost:8888` from a browser.
+    - Use **VSCode** by simply opening files from the explorer pane. You may want to install the [Jupyter Notebooks extensions](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) from the VSCode extensions marketplace.
 
 ## Notes:
 
