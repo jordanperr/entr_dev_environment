@@ -7,3 +7,6 @@
 [submodule "entr_runtime"]
 	path = entr_runtime
 	url = https://github.com/entralliance/entr_runtime.git
+[submodule "py-entr"]
+	path = py-entr
+	url = git@github.com:entralliance/py-entr.git
