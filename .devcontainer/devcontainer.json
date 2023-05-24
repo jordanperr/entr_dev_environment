@@ -3,7 +3,7 @@
 {
 	"name": "VSCode ENTR Dev Container",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "ghcr.io/entralliance/entr_runtime:dev",
+	"image": "jordanperr/entr_runtime:dev",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -12,11 +12,10 @@
 	"forwardPorts": [8888],
 
 	"mounts": [
-		"source=${localWorkspaceFolder}/OpenOA,target=/home/jovyan/src/OpenOA,type=bind",
-		"source=${localWorkspaceFolder}/entr_warehouse,target=/home/jovyan/src/entr_warehouse,type=bind"
+		"source=${localWorkspaceFolder},target=/home/jovyan/src,type=bind",
 	],
 
-	"postStartCommand": "nohup bash -c '/usr/local/bin/start-notebook.sh &' > jupyter-notebook-server.out",
+	"postStartCommand": "pip install --no-deps -e /workspaces/entr/OpenOA; pip install --no-deps -e /workspaces/entr/py-entr; nohup bash -c '/usr/local/bin/start-notebook.sh &' > jupyter-notebook-server.out",
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
