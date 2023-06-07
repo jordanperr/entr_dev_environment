@@ -1,20 +1,20 @@
 [submodule "entr_warehouse"]
 	path = entr_warehouse
-	url = git@github.com:entralliance/entr_warehouse.git
+	url = https://github.com/entralliance/entr_warehouse.git
 	branch = dev
 [submodule "OpenOA"]
 	path = OpenOA
-	url = git@github.com:entralliance/OpenOA.git
+	url = https://github.com/entralliance/OpenOA.git
 	branch = entr_runtime/dev
 [submodule "entr_runtime"]
 	path = entr_runtime
-	url = git@github.com:entralliance/entr_runtime.git
+	url = https://github.com/entralliance/entr_runtime.git
 	branch = dev
 [submodule "py-entr"]
 	path = py-entr
-	url = git@github.com:entralliance/py-entr.git
+	url = https://github.com/entralliance/py-entr.git
 	branch = main
 [submodule "entralliance.github.io"]
 	path = entralliance.github.io
-	url = git@github.com:entralliance/entralliance.github.io.git
+	url = https://github.com/entralliance/entralliance.github.io.git
 	branch = main
