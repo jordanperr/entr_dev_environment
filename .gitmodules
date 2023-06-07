@@ -10,3 +10,6 @@
 [submodule "py-entr"]
 	path = py-entr
 	url = git@github.com:entralliance/py-entr.git
+[submodule "entralliance.github.io"]
+	path = entralliance.github.io
+	url = https://github.com/entralliance/entralliance.github.io.git

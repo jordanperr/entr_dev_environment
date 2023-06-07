@@ -1,5 +1,5 @@
 docker build -t jordanperr/entr_runtime:dev_amd64 --platform linux/amd64 docker
-docker build -t jordanperr/entr_runtime:dev docker
+docker build -t --no-cache jordanperr/entr_runtime:dev docker
 
 
 
@@ -7,3 +7,6 @@ RUN entr"
 docker run -p 8888:8888 -v ~/src/entr/OpenOA:/home/jovyan/src/OpenOA -v ~/src/entr/entr_warehouse:/home/jovyan/src/entr_warehouse jordanperr/entr_runtime:dev
 
 docker run -p 8889:8888 -v ~/src/entr:/home/jovyan/src jordanperr/entr_runtime:dev
+
+
+docker run -p 8889:8888 jordanperr/entr_runtime:dev
