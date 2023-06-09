@@ -3,7 +3,8 @@
 {
 	"name": "VSCode ENTR Dev Container",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "jordanperr/entr_runtime:dev",
+	// "image": "jordanperr/entr_runtime:dev",
+	"image": "ghcr.io/entralliance/entr_runtime:dev",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
